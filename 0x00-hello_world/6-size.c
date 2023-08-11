@@ -1,9 +1,8 @@
 #include <stdio.h>
-
 /**
- * main - Printing sizes
+ * main - The beginning
  *
- * Return: 0 Task done
+ * Return: 0 (Task done)
  */
 
 int main(void)
