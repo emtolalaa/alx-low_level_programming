@@ -1,5 +1,3 @@
-Task 3
-
 #include "main.h"
 
 /**
@@ -9,7 +7,6 @@ Task 3
  */
 
 int _islower(int c)
-
 {
 	if (c >= 'a' && c <= 'z')
 		return (1);
