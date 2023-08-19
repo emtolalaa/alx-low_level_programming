@@ -1,6 +1,12 @@
 #include <stdio>
 #include "main.h"
 
+/**
+ * main- A test file
+ *
+ * Return: 0
+ */
+
 void positive_or_negative(int i)
 {
 	if (i > 0)
