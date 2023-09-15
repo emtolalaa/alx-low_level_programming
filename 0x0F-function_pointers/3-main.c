@@ -13,7 +13,6 @@ int main(int argc, char **argv)
 {
 	int num1, num2, result;
 	int (*res)(int, int);
-	char *op;
 
 	if (argc != 4)
 	{
@@ -33,7 +32,6 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 	num1 = atoi(argv[1]);
-	op = argv[2];
 	num2 = atoi(argv[3]);
 	result = res(num1, num2);
 	printf("%d\n", result);
