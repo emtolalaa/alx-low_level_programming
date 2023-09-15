@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	result = res(n1, n2);
+	result = res(num1, num2);
 	printf("%d\n", result);
 	return (0);
 }
