@@ -5,26 +5,28 @@
 
 
 /**
- * print_numbers - print nums
- *@separator: sep
- *@n:integer
+ * print_numbers - print numbers on a new line
+ * @separator: to be between numbers as strings
+ * @n: integers passed to function
+ * @...: A number of integer variables to be printed
  */
 
 void print_numbers(const *separator, const unsigned int n, ...)
 {
-	size_t i;
-	va_list string;
+	va_list nums;
+	unsigned int index;
 
-	if (separator == NULL)
-		separator = "";
-	va_start(string, n);
-	for (i = 0; i < n; i++)
+	va_start(nums, n);
+
+	for (index = 0; index < n; index++)
 	{
-		printf("%d", va_arg(string, int));
-		if (i == (n - 1))
-			continue;
-		printf("%s", separator);
+		printf("%d", va_arg(nums, int));
+
+		if (index != (n - 1) && separator != NULL)
+			printf("%s", separator);
 	}
-	va_end(string);
+
 	printf("\n");
+
+	va_end(nums);
 }
