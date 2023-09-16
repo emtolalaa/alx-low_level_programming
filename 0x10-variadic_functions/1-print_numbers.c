@@ -5,13 +5,13 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - print numbers on a new line
- * @separator: to be between numbers as strings
- * @n: integers passed to function
+ * print_numbers - Print numbers on a new line
+ * @separator: To be between numbers as strings
+ * @n: The number of integers passed to a function
  * @...: A number of integer variables to be printed
  */
 
-void print_numbers(const *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list nums;
 	unsigned int index;
